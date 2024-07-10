@@ -1,4 +1,4 @@
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Product />} />
             <Route path="/addproduct" element={<AddProduct />} />
-            <Route path="/updateproduct" element={<UpdateProduct />} />
+            <Route path="/updateproduct/:id" element={<UpdateProduct />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
